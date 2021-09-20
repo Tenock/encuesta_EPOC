@@ -87,7 +87,7 @@
                         @enderror
                     </div>
                     <div class="form-group">
-                        <label for="year">{{__('Año')}}</label>
+                        <label for="year">{{__('Año (ej. 1992)')}}</label>
                         <input id="year" type="number" class="form-control" @error ('year') is-invalid @enderror name="year" value="{{ old('year') }}" required autocomplete="year" placeholder="Año">
                         @error('year')
                             <span class="invalid-feedback" role="alert">   
