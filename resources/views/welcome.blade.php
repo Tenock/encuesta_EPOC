@@ -96,7 +96,7 @@
                         @enderror
                     </div>
                     <h3>Panoramas de Riesgo</h3>
-                    <h5>Eres un hombre o mujer de entre 50 y 80 años de edad?</h5>
+                    <h5>¿Cuenta usted con un diagnostico previo de EPOC (Enfermedad Pulmonar Crónica Obstructiva)? </h5>
                     <div class="form-check form-check-inline">
                         <input name="riskage" type="hidden" value="no"> 
                         <input id="riskage" type="checkbox" class="form-check-input" @error ('riskage') is-invalid @enderror name="riskage" value="si" autocomplete="riskage">
@@ -147,7 +147,7 @@
                     </div>
 
 
-                    <button type="submit" class="btn btn-primary my-1">Ingresar Forma</button>
+                    <button type="submit" class="btn btn-primary my-1">Calcular mi riesgo</button>
                 </form>
             </div>
         </section>    
