@@ -57,7 +57,7 @@
                     <h3>Fecha de Nacimiento</h3>
                     <div class="form-group">
                         <label for="day">{{__('Día')}}</label>
-                        <input id="day" type="text" class="form-control" @error ('day') is-invalid @enderror name="day" value="{{ old('day') }}" required autocomplete="day" placeholder="Día">
+                        <input id="day" type="number" class="form-control" @error ('day') is-invalid @enderror name="day" value="{{ old('day') }}" required autocomplete="day" placeholder="Día">
                         @error('day')
                             <span class="invalid-feedback" role="alert">   
                                 <strong>{{ $message}}</strong>
@@ -88,7 +88,7 @@
                     </div>
                     <div class="form-group">
                         <label for="year">{{__('Año')}}</label>
-                        <input id="year" type="text" class="form-control" @error ('year') is-invalid @enderror name="year" value="{{ old('year') }}" required autocomplete="year" placeholder="Año">
+                        <input id="year" type="number" class="form-control" @error ('year') is-invalid @enderror name="year" value="{{ old('year') }}" required autocomplete="year" placeholder="Año">
                         @error('year')
                             <span class="invalid-feedback" role="alert">   
                                 <strong>{{ $message}}</strong>
@@ -109,7 +109,7 @@
                     <h5>Historia de tabaquismo activo o exfumador (haberlo suspendido dentro de los ultimos 15 años)</h4>
                     <div class="form-check form-check-inline">
                         <label for="cigsmoke">{{__('Cuantos cigarros fumas al dia o fumabas?')}}</label>
-                        <input type="text" id="cigsmoke" class="form-control" @error ('cigsmoke') is-invalid @enderror name="cigsmoke" value="{{ old('cigsmoke') }}" required autocomplete="cigsmoke" placeholder="Cigarros fumados diarios">
+                        <input id="cigsmoke" type="number" class="form-control" @error ('cigsmoke') is-invalid @enderror name="cigsmoke" value="{{ old('cigsmoke') }}" required autocomplete="cigsmoke" placeholder="Cigarros fumados diarios">
                         @error('cigsmoke')
                             <span class="invalid-feedback" role="alert">   
                                 <strong>{{ $message}}</strong>
@@ -118,7 +118,7 @@
                     </div>
                     <div class="form-check form-check-inline">
                         <label for="yearssmoke">{{__('Por cuantos años fumabas o fumaste?')}}</label>
-                        <input id="yearssmoke" type="text" class="form-control" @error ('yearssmoke') is-invalid @enderror name="yearssmoke" value="{{ old('yearssmoke') }}" required autocomplete="yearssmoke" placeholder="Años fumando">
+                        <input id="yearssmoke" type="number" class="form-control" @error ('yearssmoke') is-invalid @enderror name="yearssmoke" value="{{ old('yearssmoke') }}" required autocomplete="yearssmoke" placeholder="Años fumando">
                         @error('yearssmoke')
                             <span class="invalid-feedback" role="alert">   
                                 <strong>{{ $message}}</strong>
@@ -128,7 +128,7 @@
                     <h5>Exposición a humo de leña (al menos 100 horas de humo al año)</h4>
                     <div class="form-check form-check-inline">
                         <label for="hourswood">{{__('Cuantos Horas pasas al dia expuesto o expuesta a humo de leña?')}}</label>
-                        <input id="hourswood" type="text" class="form-control" @error ('hourswood') is-invalid @enderror name="hourswood" value="{{ old('hourswood') }}" required autocomplete="hourswood" placeholder="Horas diarias expuesto o expuesta a humo de leña">
+                        <input id="hourswood" type="number" class="form-control" @error ('hourswood') is-invalid @enderror name="hourswood" value="{{ old('hourswood') }}" required autocomplete="hourswood" placeholder="Horas diarias expuesto o expuesta a humo de leña">
                         @error('hourswood')
                             <span class="invalid-feedback" role="alert">   
                                 <strong>{{ $message}}</strong>
@@ -137,7 +137,7 @@
                     </div>
                     <div class="form-check form-check-inline">
                         <label for="yearswood">{{__('Cuantos Años has pasado expuesto a humo de leña?')}}</label>
-                        <input id="yearswood" type="text" class="form-control" @error ('yearswood') is-invalid @enderror name="yearswood" value="{{ old('yearswood') }}" required autocomplete="yearswood" placeholder="Años expuestos a humo de leña">
+                        <input id="yearswood" type="number" class="form-control" @error ('yearswood') is-invalid @enderror name="yearswood" value="{{ old('yearswood') }}" required autocomplete="yearswood" placeholder="Años expuestos a humo de leña">
                         @error('yearswood')
                             <span class="invalid-feedback" role="alert">   
                                 <strong>{{ $message}}</strong>
