@@ -20,7 +20,7 @@
                     <h1>Encuesta de Diagnóstico de Enfermedad Pulmonar Obstructiva Crónica (EPOC)</h1>
                     <div class="form-group">
                         <label for="name">{{__('Nombre(s)')}}</label>
-                        <input id= "name" type="text" class="form-control" @error ('name') is-invalid @enderror name="name" value="{{ old('name') }}" required autocomplete="name" autofocus placeholder="Introduce tu Nombre Aqui" lang="es">
+                        <input id= "name" type="text" class="form-control" @error ('name') is-invalid @enderror name="name" value="{{ old('name') }}" required autocomplete="name" autofocus placeholder="Introduce tu Nombre Aqui">
                         @error('name')
                             <span class="invalid-feedback" role="alert">   
                                 <strong>{{ $message}}</strong>
@@ -147,7 +147,7 @@
                     </div>
 
 
-                    <button type="submit" class="btn btn-primary my-1" onclick="alert('Formulario Registrado con Exito!')">Ingresar Forma</button>
+                    <button type="submit" class="btn btn-primary my-1">Ingresar Forma</button>
                 </form>
             </div>
         </section>    
