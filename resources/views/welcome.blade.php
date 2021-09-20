@@ -98,6 +98,7 @@
                     <h3>Panoramas de Riesgo</h3>
                     <h5>Eres un hombre o mujer de entre 50 y 80 años de edad?</h5>
                     <div class="form-check form-check-inline">
+                        <input name="riskage" type="hidden" value="no"> 
                         <input id="riskage" type="checkbox" class="form-check-input" @error ('riskage') is-invalid @enderror name="riskage" value="si" autocomplete="riskage">
                         <label class="form-check-label" for="riskage">{{__('Si')}}</label>
                         @error('riskage')
